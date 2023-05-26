@@ -30,7 +30,7 @@ def main():
         return prediction
 
     model = load_model()
-    class_names = ["CLOUDY", "SUNRISE"]
+    class_names = ["SLUG", "SNAIL"]
     
 
     file = st.file_uploader("Choose a Gastropod picture from your computer", type=["jpg", "png", "jpeg"])
