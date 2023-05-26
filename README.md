@@ -1,6 +1,6 @@
-# EmergingTechFinals_CPE-019
+#CPE-019_EmergingTechFinals
 
-#Members:
+<h2>Members:</h2>
 <ul>
 <li>Kenneth Cordero
 <li>Grant Guriel Geslani
