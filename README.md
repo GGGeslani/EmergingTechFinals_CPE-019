@@ -1,6 +1,8 @@
 # EmergingTechFinals_CPE-019
 
 #Members:
-Kenneth Cordero
-Grant Guriel Geslani
-Aaron Jan Inlayo
+<ul>
+<li>Kenneth Cordero
+<li>Grant Guriel Geslani
+<li>Aaron Jan Inlayo
+</ul>
