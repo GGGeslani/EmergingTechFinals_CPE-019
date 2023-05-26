@@ -5,8 +5,49 @@ import numpy as np
 import cv2
 
 def main():
-    # set up the Streamlit app
-    st.write("Members:")
+    # Set up the Streamlit app
+    st.markdown(
+        """
+        <style>
+        body {
+            background-image: url('BG1.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        .container {
+            position: relative;
+        }
+
+        .animated-slug {
+            position: absolute;
+            top: 50%;
+            left: 0;
+            animation: slug-animation 10s linear infinite;
+        }
+
+        .animated-snail {
+            position: absolute;
+            top: 50%;
+            right: 0;
+            animation: snail-animation 12s linear infinite;
+        }
+
+        @keyframes slug-animation {
+            0% { transform: translateX(-100%); }
+            100% { transform: translateX(100%); }
+        }
+
+        @keyframes snail-animation {
+            0% { transform: translateX(100%); }
+            100% { transform: translateX(-100%); }
+        }
+        </style>
+        """,
+        unsafe_allow_html=True
+    )
+
+  st.write("Members:")
     st.write("Kenneth Cordero")
     st.write("Grant Guriel Geslani")
     st.write("Aaron Jan Inalyo")
@@ -45,6 +86,17 @@ def main():
         class_name = class_names[class_index]
         string = "Prediction: " + class_name
         st.success(string)
- 
+
+    # Add animated slug and snail
+    st.markdown(
+        """
+        <div class="container">
+            <img class="animated-slug" src="Slug2.gif" alt="Slug" width="200px">
+            <img class="animated-snail" src="Snail.gif" alt="Snail" width="200px">
+        </div>
+        """,
+        unsafe_allow_html=True
+    )
+
 if __name__ == "__main__":
     main()
