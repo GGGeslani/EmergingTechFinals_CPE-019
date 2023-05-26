@@ -10,7 +10,7 @@ def main():
     st.write("Kenneth Cordero")
     st.write("Grant Guriel Geslani")
     st.write("Aaron Jan Inalyo")
-    st.write("Course &n Section: CPE019 - CPE32S3")
+    st.write("Course & Section: CPE019 - CPE32S3")
     st.write("Instructor: Engr. Roman Richard")
     st.title("Gastropod Mollusk Classifier (Slug/Snail)")
     st.write("This app classifies whether an uploaded image contains a Slug or Snail images using a pre-trained convolutional neural network model.")
