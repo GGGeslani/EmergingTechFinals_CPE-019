@@ -47,7 +47,7 @@ def main():
         unsafe_allow_html=True
     )
 
-  st.write("Members:")
+    st.write("Members:")
     st.write("Kenneth Cordero")
     st.write("Grant Guriel Geslani")
     st.write("Aaron Jan Inalyo")
