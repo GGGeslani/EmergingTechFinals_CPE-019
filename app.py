@@ -10,37 +10,8 @@ def main():
         """
         <style>
         body {
-            background-image: url('BG1.jpg');
+            background-image: url('BG2.jpg');
             background-size: cover;
-            background-repeat: no-repeat;
-        }
-
-        .container {
-            position: relative;
-        }
-
-        .animated-slug {
-            position: absolute;
-            top: 50%;
-            left: 0;
-            animation: slug-animation 10s linear infinite;
-        }
-
-        .animated-snail {
-            position: absolute;
-            top: 50%;
-            right: 0;
-            animation: snail-animation 12s linear infinite;
-        }
-
-        @keyframes slug-animation {
-            0% { transform: translateX(-100%); }
-            100% { transform: translateX(100%); }
-        }
-
-        @keyframes snail-animation {
-            0% { transform: translateX(100%); }
-            100% { transform: translateX(-100%); }
         }
         </style>
         """,
@@ -54,7 +25,7 @@ def main():
     st.write("Course &n Section: CPE019 - CPE32S3")
     st.write("Instructor: Engr. Roman Richard")
     st.title("Gastropod Mollusk Classifier (Slug/Snail)")
-    st.write("This app classifies whether an uploaded image contains a Slug or Snail images using a pre-trained convolutional neural network model.")
+    st.write("This app classifies whether an uploaded image contains a Slug or Snail images using a pre-trained convolutional neural network model."
    
     @st.cache_resource
     def load_model():
@@ -86,17 +57,6 @@ def main():
         class_name = class_names[class_index]
         string = "Prediction: " + class_name
         st.success(string)
-
-    # Add animated slug and snail
-    st.markdown(
-        """
-        <div class="container">
-            <img class="animated-slug" src="Slug2.gif" alt="Slug" width="200px">
-            <img class="animated-snail" src="Snail.gif" alt="Snail" width="200px">
-        </div>
-        """,
-        unsafe_allow_html=True
-    )
-
+ 
 if __name__ == "__main__":
     main()
